@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Third Sip</title>
+    <link rel="icon" type="image/x-icon" href="./public/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/css.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo">
+          <svg width="70" height="70">
+            <use href="./public/symbol-defs.svg#icon-logo"></use>
+          </svg>
+
+          <h2 class="logo-heading">The Third Sip</h2>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="list-item"><a href="./index.html#menu">Menu</a></li>
+            <li class="list-item"><a href="./index.html#about">About</a></li>
+          </ul>
+        </nav>
+        <ul class="button-list">
+          <li class="list-item"><button class="order button">Order</button></li>
+          <li class="list-item"><button class="faq button">FAQ</button></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-wrapper">
+        <section class="main-section" id="main">
+          <h1 class="main-heading">The Third Sip</h1>
+        </section>
+        <section class="about-section" id="about">
+          <h2 class="second-heading">About</h2>
+        </section>
+        <section class="menu-section" id="menu">
+          <h2 class="second-heading">Menu</h2>
+        </section>
+        <section class="order-section" id="order">
+          <h2 class="second-heading">Order</h2>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper"></div>
+    </footer>
+
+    <script>
+      configObj = {
+        buttonD:
+          "M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z",
+        buttonT:
+          "translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)",
+        shadowSize:
+          "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+        roundnessSize: "999px",
+        buttonDToBottom: "40px",
+        buttonDToRight: "40px",
+        selectedBackgroundColor: "#000000",
+        selectedIconColor: "#f3f1f1",
+        buttonWidth: "40px",
+        buttonHeight: "40px",
+        svgWidth: "32px",
+        svgHeight: "32px",
+      };
+      function createButton(obj, pageSimulator) {
+        const body = document.querySelector("body");
+        backToTopButton = document.createElement("span");
+        backToTopButton.classList.add("softr-back-to-top-button");
+        backToTopButton.id = "softr-back-to-top-button";
+        pageSimulator
+          ? pageSimulator.appendChild(backToTopButton)
+          : body.appendChild(backToTopButton);
+        backToTopButton.style.width = obj.buttonWidth;
+        backToTopButton.style.height = obj.buttonHeight;
+        backToTopButton.style.marginRight = obj.buttonDToRight;
+        backToTopButton.style.marginBottom = obj.buttonDToBottom;
+        backToTopButton.style.borderRadius = obj.roundnessSize;
+        backToTopButton.style.boxShadow = obj.shadowSize;
+        backToTopButton.style.color = obj.selectedBackgroundColor;
+        backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
+        pageSimulator
+          ? (backToTopButton.style.position = "absolute")
+          : (backToTopButton.style.position = "fixed");
+        backToTopButton.style.outline = "none";
+        backToTopButton.style.bottom = "0px";
+        backToTopButton.style.right = "0px";
+        backToTopButton.style.cursor = "pointer";
+        backToTopButton.style.textAlign = "center";
+        backToTopButton.style.border = "solid 2px currentColor";
+        backToTopButton.innerHTML =
+          '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';
+        backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");
+        backToTopButtonSvg.style.verticalAlign = "middle";
+        backToTopButtonSvg.style.margin = "auto";
+        backToTopButtonSvg.style.justifyContent = "center";
+        backToTopButtonSvg.style.width = obj.svgWidth;
+        backToTopButtonSvg.style.height = obj.svgHeight;
+        backToTopButton.appendChild(backToTopButtonSvg);
+        backToTopButtonImg = document.querySelector(".back-to-top-button-img");
+        backToTopButtonImg.style.fill = obj.selectedIconColor;
+        backToTopButtonSvg.appendChild(backToTopButtonImg);
+        backToTopButtonImg.setAttribute("d", obj.buttonD);
+        backToTopButtonImg.setAttribute("transform", obj.buttonT);
+        if (!pageSimulator) {
+          backToTopButton.style.display = "none";
+          window.onscroll = function () {
+            if (
+              document.body.scrollTop > 20 ||
+              document.documentElement.scrollTop > 20
+            ) {
+              backToTopButton.style.display = "block";
+            } else {
+              backToTopButton.style.display = "none";
+            }
+          };
+          backToTopButton.onclick = function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          };
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        createButton(configObj, null);
+      });
+    </script>
+  </body>
+</html>

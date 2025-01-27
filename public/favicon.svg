@@ -1,0 +1,14 @@
+<svg width="191" height="167" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="62" cy="106" r="45" fill="url(#a)" stroke="#F5F5F5" stroke-width="10"/>
+<ellipse cx="10.08" cy="117.08" rx="9.43" ry="6" transform="rotate(-6.83 10.08 117.08)" fill="#F5F5F5"/>
+<circle cx="130" cy="117" r="45" fill="#FFD1A0" stroke="#423528" stroke-width="10"/>
+<ellipse cx="180" cy="137.12" rx="9.43" ry="6" transform="rotate(22.21 180 137.12)" fill="#423528"/>
+<circle cx="109" cy="50" r="45" fill="#423528" stroke="#332E29" stroke-width="10"/>
+<ellipse cx="158.54" cy="32.97" rx="9.43" ry="6" transform="rotate(-13.04 158.54 32.97)" fill="#332E29"/>
+<defs>
+<linearGradient id="a" x1="62" y1="56" x2="62" y2="156" gradientUnits="userSpaceOnUse">
+<stop stop-color="#423528"/>
+<stop offset="1" stop-color="#A88766"/>
+</linearGradient>
+</defs>
+</svg>
