@@ -17,122 +17,96 @@
     <header class="header">
       <div class="wrapper">
         <div class="logo">
-          <svg width="70" height="70">
-            <use href="./public/symbol-defs.svg#icon-logo"></use>
-          </svg>
-
-          <h2 class="logo-heading">The Third Sip</h2>
+          <h1 class="logo-name">The Third Sip</h1>
         </div>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="list-item"><a href="./index.html#menu">Menu</a></li>
-            <li class="list-item"><a href="./index.html#about">About</a></li>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="nav-list-item"><a class="nav-item-link" href="./index.html#about">About</a></li>
+            <li class="nav-list-item"><a class="nav-item-link" href="./index.html#menu">Menu</a></li>
+            <li class="nav-list-item"><a class="nav-item-link" href="./index.html#order">Order</a></li>
           </ul>
         </nav>
-        <ul class="button-list">
-          <li class="list-item"><button class="order button">Order</button></li>
-          <li class="list-item"><button class="faq button">FAQ</button></li>
-        </ul>
       </div>
     </header>
     <main class="main">
-      <div class="main-wrapper">
-        <section class="main-section" id="main">
-          <h1 class="main-heading">The Third Sip</h1>
-        </section>
-        <section class="about-section" id="about">
-          <h2 class="second-heading">About</h2>
-        </section>
-        <section class="menu-section" id="menu">
+      <section class="main-info" id="main">
+        <div class="wrapper">
+          <h2 class="second-heading visually-hidden">Main</h2>
+          <div class="main-content">
+            <div class="description-wrapper">
+              <img src="./images/mainImage.webp" alt="Three People handing their coffee" class="main-img">
+              <p class="paragraf">In this paragraph we are going to tell people how we produce coffee and how good it is.
+                This whole block of the text should be filled at least for 70% so it would look better, but since I don't know what should I type in here, I am just adding random text like my thoughts</p>
+            </div>
+            <div class="images-wrapper">
+              <img src="./images/littleMainImageOne.png" alt="Barista handing coffee for customers" class="lit-image">
+              <img src="./images/littleMainImageTwo.png" alt="Coffee seeds on the table" class="lit-image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="wrapper">
+          <div class="main-content">
+            <img src="./images/aboutOne.png" alt="Different type of coffee seeds" class="main-img">
+            <p class="paragraf">In this paragraph we are telling people which ingredients and sorts of coffee we use to make coffee, which milk we have and the way we produce coffee so people would know what they gonna have</p>
+          </div>
+          <div class="main-content">
+            <p class="paragraf">As it was said before we are telling people about different type of milks that we use to make over coffee better: such as regular milk, almond milk, oat milk, soy milk, coconut milk, pea milk etc</p>
+            <img src="./images/aboutTwo.png" alt="Different type of milk" class="main-img">
+          </div>
+        </div>
+      </section>
+      <section class="menu" id="menu">
+        <div class="wrapper">
           <h2 class="second-heading">Menu</h2>
-        </section>
-        <section class="order-section" id="order">
+        </div>
+      </section>
+      <section class="order" id="order">
+        <div class="wrapper">
           <h2 class="second-heading">Order</h2>
-        </section>
-      </div>
+          <div class="order-wrapper">
+            <div class="buy-list-wrapper"></div>
+            <h3 class="third-heading">Make your order</h3>
+            <form action="" class="order-form">
+              <label class="form-label">Name</label>
+              <input class="form-input" type="text">
+              <label class="form-label">Surname</label>
+              <input class="form-input" type="text">
+              <label class="form-label">Mail</label>
+              <input class="form-input" type="email">
+              <label class="form-label">Phone</label>
+              <input class="form-input" type="number">
+              <label class="form-label">Address</label>
+              <input class="form-input" type="address">
+            </form>
+            <div class="payment-wrapper">
+              <button class="payment-method">Google Pay</button>
+              <button class="payment-method">Apple Pay</button>
+              <button class="payment-method">Mastercard/Visa</button>
+            </div>
+            <button class="order-wrapper">Order</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <div class="wrapper"></div>
+    <footer class="footer" id="footer">
+      <div class="wrapper">
+        <h2 class="second-heading">The Third Sip</h2>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="./index.html#about" class="footer-item-link">About</a></li>
+          <li class="footer-list-item"><a href="./index.html#menu" class="footer-item-link">Menu</a></li>
+          <li class="footer-list-item"><a href="./index.html#order" class="footer-item-link">Order</a></li>
+        </ul>
+        <div class="credits">
+          <p class="paragraf">Page made by Stremetskyi Vladyslav</p>
+          <ul class="credits-list">
+            <li class="credits-item"><a href="" class="credits-link">+48 123-456-789</a></li>
+            <li class="credits-item"><a href="" class="credits-link">ttsmail@no-reply.com</a></li>
+            <li class="credits-item"><a href="" class="credits-link">Marszalkowska 27/35, 00-639 Warsaw</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
-
-    <script>
-      configObj = {
-        buttonD:
-          "M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z",
-        buttonT:
-          "translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)",
-        shadowSize:
-          "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-        roundnessSize: "999px",
-        buttonDToBottom: "40px",
-        buttonDToRight: "40px",
-        selectedBackgroundColor: "#000000",
-        selectedIconColor: "#f3f1f1",
-        buttonWidth: "40px",
-        buttonHeight: "40px",
-        svgWidth: "32px",
-        svgHeight: "32px",
-      };
-      function createButton(obj, pageSimulator) {
-        const body = document.querySelector("body");
-        backToTopButton = document.createElement("span");
-        backToTopButton.classList.add("softr-back-to-top-button");
-        backToTopButton.id = "softr-back-to-top-button";
-        pageSimulator
-          ? pageSimulator.appendChild(backToTopButton)
-          : body.appendChild(backToTopButton);
-        backToTopButton.style.width = obj.buttonWidth;
-        backToTopButton.style.height = obj.buttonHeight;
-        backToTopButton.style.marginRight = obj.buttonDToRight;
-        backToTopButton.style.marginBottom = obj.buttonDToBottom;
-        backToTopButton.style.borderRadius = obj.roundnessSize;
-        backToTopButton.style.boxShadow = obj.shadowSize;
-        backToTopButton.style.color = obj.selectedBackgroundColor;
-        backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
-        pageSimulator
-          ? (backToTopButton.style.position = "absolute")
-          : (backToTopButton.style.position = "fixed");
-        backToTopButton.style.outline = "none";
-        backToTopButton.style.bottom = "0px";
-        backToTopButton.style.right = "0px";
-        backToTopButton.style.cursor = "pointer";
-        backToTopButton.style.textAlign = "center";
-        backToTopButton.style.border = "solid 2px currentColor";
-        backToTopButton.innerHTML =
-          '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';
-        backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");
-        backToTopButtonSvg.style.verticalAlign = "middle";
-        backToTopButtonSvg.style.margin = "auto";
-        backToTopButtonSvg.style.justifyContent = "center";
-        backToTopButtonSvg.style.width = obj.svgWidth;
-        backToTopButtonSvg.style.height = obj.svgHeight;
-        backToTopButton.appendChild(backToTopButtonSvg);
-        backToTopButtonImg = document.querySelector(".back-to-top-button-img");
-        backToTopButtonImg.style.fill = obj.selectedIconColor;
-        backToTopButtonSvg.appendChild(backToTopButtonImg);
-        backToTopButtonImg.setAttribute("d", obj.buttonD);
-        backToTopButtonImg.setAttribute("transform", obj.buttonT);
-        if (!pageSimulator) {
-          backToTopButton.style.display = "none";
-          window.onscroll = function () {
-            if (
-              document.body.scrollTop > 20 ||
-              document.documentElement.scrollTop > 20
-            ) {
-              backToTopButton.style.display = "block";
-            } else {
-              backToTopButton.style.display = "none";
-            }
-          };
-          backToTopButton.onclick = function () {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          };
-        }
-      }
-      document.addEventListener("DOMContentLoaded", function () {
-        createButton(configObj, null);
-      });
-    </script>
   </body>
 </html>
