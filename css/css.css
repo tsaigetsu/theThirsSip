@@ -7,6 +7,9 @@ html {
 body {
     background-color: #FFFAF2;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: 'Montserrat', serif;
     flex-direction: column;
 }
@@ -28,6 +31,96 @@ body {
     width: 1558px;
   }
 
-  img {
-    width: 200px;
+  .second-heading {
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .wrapper-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 45px 70px 0;
+  }
+
+  .logo-name {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .header-nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .nav-list-item{
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper-main {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 70px;
+  }
+
+  .description-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 50px;
+  }
+
+  .main-img {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+  .paragraf {
+    width: 700px;
+    padding: 52px 48px 37px 139px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .images-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    padding: ;
+  }
+
+  .lit-image {
+    width: 780px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .extra-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .first {
+    flex-direction: row-reverse;
   }
