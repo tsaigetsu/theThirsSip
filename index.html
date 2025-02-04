@@ -1,118 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Third Sip</title>
-    <link rel="icon" type="image/x-icon" href="./public/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/css.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrapper wrapper-header">
-        <div class="logo">
-          <h1 class="logo-name">The Third Sip</h1>
-        </div>
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="nav-list-item"><a class="nav-item-link" href="./index.html#about">About</a></li>
-            <li class="nav-list-item"><a class="nav-item-link" href="./index.html#menu">Menu</a></li>
-            <li class="nav-list-item"><a class="nav-item-link" href="./index.html#order">Order</a></li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Third Sip</title>
+  <link rel="icon" type="image/x-icon" href="./public/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/css.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper wrapper-header">
+      <div class="logo">
+        <h1 class="logo-name">The Third Sip</h1>
       </div>
-    </header>
-    <main class="main">
-      <section class="main-info" id="main">
-        <div class="wrapper wrapper-main">
-          <h2 class="second-heading visually-hidden">Main</h2>
-          <div class="main-info-content">
-            <div class="description-wrapper">
-              <div class="main-img-wrapper">
-                <img src="./images/mainImage.webp" alt="Three People handing their coffee" class="main-img">
-              </div>
-              <p class="paragraf">In this paragraph we are going to tell people how we produce coffee and how good it is.
-                This whole block of the text should be filled at least for 70% so it would look better, but since I don't know what should I type in here, I am just adding random text like my thoughts</p>
-            </div>
-            <div class="images-wrapper">
-              <img src="./images/littleMainImageOne.png" alt="Barista handing coffee for customers" class="lit-image">
-              <img src="./images/littleMainImageTwo.png" alt="Coffee seeds on the table" class="lit-image">
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-      <section class="about" id="about">
-        <div class="wrapper about-wrapper">
-          <h2 class="second-heading">About</h2>
-          <div class="extra-wrapper">
-            <div class="main-content">
-              <p class="paragraf">In this paragraph we are telling people which ingredients and sorts of coffee we use to make coffee, which milk we have and the way we produce coffee so people would know what they gonna have</p>
-              <img src="./images/aboutOne.png" alt="Different type of coffee seeds" class="main-img">
-            </div>
-            <div class="main-content first">
-              <p class="paragraf">As it was said before we are telling people about different type of milks that we use to make over coffee better: such as regular milk, almond milk, oat milk, soy milk, coconut milk, pea milk etc</p>
-              <img src="./images/aboutTwo.png" alt="Different type of milk" class="main-img">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="menu" id="menu">
-        <div class="wrapper">
-          <h2 class="second-heading">Menu</h2>
-        </div>
-      </section>
-      <section class="order" id="order">
-        <div class="wrapper">
-          <h2 class="second-heading">Order</h2>
-          <div class="order-wrapper">
-            <div class="buy-list-wrapper"></div>
-            <h3 class="third-heading">Make your order</h3>
-            <form action="" class="order-form">
-              <label class="form-label">Name</label>
-              <input class="form-input" type="text">
-              <label class="form-label">Surname</label>
-              <input class="form-input" type="text">
-              <label class="form-label">Mail</label>
-              <input class="form-input" type="email">
-              <label class="form-label">Phone</label>
-              <input class="form-input" type="number">
-              <label class="form-label">Address</label>
-              <input class="form-input" type="address">
-            </form>
-            <div class="payment-wrapper">
-              <button class="payment-method">Google Pay</button>
-              <button class="payment-method">Apple Pay</button>
-              <button class="payment-method">Mastercard/Visa</button>
-            </div>
-            <button class="order-wrapper">Order</button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer" id="footer">
-      <div class="wrapper">
-        <h2 class="second-heading">The Third Sip</h2>
-        <ul class="footer-list">
-          <li class="footer-list-item"><a href="./index.html#about" class="footer-item-link">About</a></li>
-          <li class="footer-list-item"><a href="./index.html#menu" class="footer-item-link">Menu</a></li>
-          <li class="footer-list-item"><a href="./index.html#order" class="footer-item-link">Order</a></li>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="nav-list-item"><a class="nav-item-link" href="./index.html#about">About</a></li>
+          <li class="nav-list-item"><a class="nav-item-link" href="./index.html#menu">Menu</a></li>
+          <li class="nav-list-item"><a class="nav-item-link" href="./index.html#order">Order</a></li>
         </ul>
-        <div class="credits">
-          <p class="paragraf">Page made by Stremetskyi Vladyslav</p>
-          <ul class="credits-list">
-            <li class="credits-item"><a href="" class="credits-link">+48 123-456-789</a></li>
-            <li class="credits-item"><a href="" class="credits-link">ttsmail@no-reply.com</a></li>
-            <li class="credits-item"><a href="" class="credits-link">Marszalkowska 27/35, 00-639 Warsaw</a></li>
-          </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main-info" id="main">
+      <div class="wrapper wrapper-main">
+        <h2 class="second-heading visually-hidden">Main</h2>
+        <div class="main-info-content">
+          <div class="description-wrapper">
+            <div class="main-img-wrapper">
+              <img src="./images/mainImage.webp" alt="Three People handing their coffee" class="main-img">
+            </div>
+            <p class="paragraf">In this paragraph we are going to tell people how we produce coffee and how good it is.
+              This whole block of the text should be filled at least for 70% so it would look better, but since I don't
+              know what should I type in here, I am just adding random text like my thoughts</p>
+          </div>
+          <div class="images-wrapper">
+            <img src="./images/littleMainImageOne.png" alt="Barista handing coffee for customers" class="lit-image">
+            <img src="./images/littleMainImageTwo.png" alt="Coffee seeds on the table" class="lit-image">
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="wrapper about-wrapper">
+        <h2 class="second-heading">About</h2>
+        <div class="extra-wrapper">
+          <div class="main-content">
+            <p class="paragraf">In this paragraph we are telling people which ingredients and sorts of coffee we use to
+              make coffee, which milk we have and the way we produce coffee so people would know what they gonna have
+            </p>
+            <img src="./images/aboutOne.png" alt="Different type of coffee seeds" class="main-img">
+          </div>
+          <div class="main-content first">
+            <p class="paragraf">As it was said before we are telling people about different type of milks that we use to
+              make over coffee better: such as regular milk, almond milk, oat milk, soy milk, coconut milk, pea milk etc
+            </p>
+            <img src="./images/aboutTwo.png" alt="Different type of milk" class="main-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <div class="wrapper">
+        <h2 class="second-heading">Menu</h2>
+        <ul class="coffee-list">
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-01-27_100639199-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Morning Spark</h3>
+              <p class="small paragraf">A simple yet bold start to the day.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img src="./images/coffee-items/obraz_2025-01-27_102626107-removebg-preview.png" alt=""
+                class="coffee-img">
+              <h3 class="third-heading">Gentle Awakening</h3>
+              <p class="small paragraf">Espresso mellowed with hot water for a balanced sip.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img src="./images/coffee-items/obraz_2025-01-27_102800430-removebg-preview.png" alt=""
+                class="coffee-img">
+              <h3 class="third-heading">Pure Focus</h3>
+              <p class="small paragraf">Straight to the point, with a powerful flavor.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img src="./images/coffee-items/obraz_2025-01-27_103050476-removebg-preview.png" alt=""
+                class="coffee-img">
+              <h3 class="third-heading">Double Dare</h3>
+              <p class="small paragraf">Twice the punch of a classic espresso.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_074805119-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Soft Embrace</h3>
+              <p class="small paragraf">Espresso softened with creamy steamed milk.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_075150076-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Energy Boost</h3>
+              <p class="small paragraf">A bold mix of coffee and espresso for the ultimate lift.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_080223281-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Velvet Cloud</h3>
+              <p class="small paragraf">A creamy, foamy delight with a shot of espresso.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_080458079-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Endless Moments</h3>
+              <p class="small paragraf">A longer espresso pull for a deeper experience.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_081218834-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Whispered Touch</h3>
+              <p class="small paragraf">Espresso kissed with a hint of foam.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_081326472-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Choco Bliss</h3>
+              <p class="small paragraf">A sweet escape with espresso, chocolate, and milk.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_081326472-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Bold & Brief</h3>
+              <p class="small paragraf">A concentrated shot of pure espresso essence.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_081551831-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Creamy Comfort</h3>
+              <p class="small paragraf">Espresso and steamed milk, perfectly balanced.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_082223648-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Sweet Indulgence</h3>
+              <p class="small paragraf">Espresso poured over creamy vanilla ice cream.</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_082316873-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">French Whisper</h3>
+              <p class="small paragraf">Coffee with steamed milk, inspired by French mornings</p>
+              <div class="rate"></div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+          <li class="coffee-list-item">
+            <div class="coffee-wrap">
+              <img
+                src="./images/coffee-items/obraz_2025-02-04_082851893-removebg-preview_waifu2x_photo_noise1_scale.png"
+                alt="" class="coffee-img">
+              <h3 class="third-heading">Golden Hour</h3>
+              <p class="small paragraf">A warm blend of coffee, whiskey, sugar, and cream.</p>
+              <div class="rate">
+                
+              </div>
+              <div class="price">
+                <h3 class="third-heading"></h3>
+                <h3 class="third-heading"></h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <div class="wrapper">
+        <h2 class="second-heading">Order</h2>
+        <div class="order-wrapper">
+          <div class="buy-list-wrapper"></div>
+          <h3 class="third-heading">Make your order</h3>
+          <form action="" class="order-form">
+            <label class="form-label">Name</label>
+            <input class="form-input" type="text">
+            <label class="form-label">Surname</label>
+            <input class="form-input" type="text">
+            <label class="form-label">Mail</label>
+            <input class="form-input" type="email">
+            <label class="form-label">Phone</label>
+            <input class="form-input" type="number">
+            <label class="form-label">Address</label>
+            <input class="form-input" type="address">
+          </form>
+          <div class="payment-wrapper">
+            <button class="payment-method">Google Pay</button>
+            <button class="payment-method">Apple Pay</button>
+            <button class="payment-method">Mastercard/Visa</button>
+          </div>
+          <button class="order-wrapper">Order</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="wrapper">
+      <h2 class="second-heading">The Third Sip</h2>
+      <ul class="footer-list">
+        <li class="footer-list-item"><a href="./index.html#about" class="footer-item-link">About</a></li>
+        <li class="footer-list-item"><a href="./index.html#menu" class="footer-item-link">Menu</a></li>
+        <li class="footer-list-item"><a href="./index.html#order" class="footer-item-link">Order</a></li>
+      </ul>
+      <div class="credits">
+        <p class="paragraf">Page made by Stremetskyi Vladyslav</p>
+        <ul class="credits-list">
+          <li class="credits-item"><a href="" class="credits-link">+48 123-456-789</a></li>
+          <li class="credits-item"><a href="" class="credits-link">ttsmail@no-reply.com</a></li>
+          <li class="credits-item"><a href="" class="credits-link">Marszalkowska 27/35, 00-639 Warsaw</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
